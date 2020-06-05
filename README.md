@@ -1,7 +1,12 @@
 # Prediction of biological processes indirectly targeted by human microRNAs 
+This R Shiny application is a tool that predicts biological processes indirectly targeted by human microRNAs.
+
 
 ## Running the application
 
+
+
+## Parameters
 |      Parameter        |Description                          |Possible values                         |
 |----------------|-------------------------------|-----------------------------|
 |Tissue type	 |29 different tissues         |Brain, colon, lung,  ..           |
