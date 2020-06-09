@@ -1,12 +1,20 @@
 # Prediction of biological processes indirectly targeted by human microRNAs 
-This R Shiny application is a tool that predicts biological processes indirectly targeted by human microRNAs.
+This R Shiny application is a tool that can be used to predict biological processes (GO terms) indirectly targeted by human microRNAs. In contrast to direct targets which are predicted to have binding sites, indirect targets are regulated transcriptionally through transcription factors (TFs). 
 
 
 ## Running the application
+There are two ways to run this tool,
+### Online through Shinyapps.io platform
+can be accessed directly from this link https://fadeel.shinyapps.io/miRNA-GO-analysis/  
+### Locally using RStudio
+ 1. Download R shiny app source code from GitHub https://github.com/Fadeel/miRNA-GO-analysis/archive/master.zip
+ 2. Open `miRNA-GO-analysis.R` in RStudio.
+ 3. Make sure the following packages are installed (shinythemes, shiny, DT, dplyr and stringr).
+ 4.  You can run the application by clicking the 'Run App' button
 
 
 
-## Parameters
+## Input Parameters
 |      Parameter        |Description                          |Possible values                         |
 |----------------|-------------------------------|-----------------------------|
 |Tissue type	 |29 different tissues         |Brain, colon, lung,  ..           |
