@@ -12,8 +12,6 @@ can be accessed directly from this link https://fadeel.shinyapps.io/miRNA-GO-ana
  3. Make sure the following packages are installed (shinythemes, shiny, DT, dplyr and stringr).
  4.  You can run the application by clicking the 'Run App' button
 
-
-
 ## Input Parameters
 |      Parameter        |Description                          |Possible values                         |
 |----------------|-------------------------------|-----------------------------|
@@ -23,3 +21,6 @@ can be accessed directly from this link https://fadeel.shinyapps.io/miRNA-GO-ana
 |Targeting mode	 |Choose mode of miRNA targeting  |  Direct OR indirect   |  
 |Percentage of TargetScan target genes	 |		percentage of top-ranked targeted genes (sorted by TargetScan v7.2 context++ score)		|[20% - 100%], step size 20% |
 | min. number of genes per GO term |   GO terms with number of genes less than this number will be removed|  5|
+
+## User interface 
+This app has two panels, left one for input data and parameters selection and the right one for displaying the results in table format as shown in below ![example run](https://raw.githubusercontent.com/Fadeel/miRNA-GO-analysis/master/example.PNG)
