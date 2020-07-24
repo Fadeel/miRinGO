@@ -1,5 +1,5 @@
-# miRinGO: Prediction of biological processes indirectly targeted by human microRNAs 
-This R Shiny application can be used to predict biological processes (GO terms) indirectly targeted by human microRNAs. In contrast to direct targets which are predicted to have binding sites, indirect targets are regulated transcriptionally through transcription factors (TFs). 
+# miRinGO: Prediction of GO terms indirectly targeted by human microRNAs 
+This R Shiny application can be used to predict Gene Ontology (GO) terms indirectly targeted by human microRNAs. In contrast to direct targets which are predicted to have binding sites, indirect targets are regulated transcriptionally through transcription factors (TFs). 
 
 
 ## Running the application
