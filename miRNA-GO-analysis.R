@@ -257,8 +257,13 @@ server <- function(input, output) {
   output$table <- DT::renderDataTable({ 
     x <- enrichment()
     x <- x %>% dplyr::select( - c(targeted_genes)   )
+
+    #add hyperlinks to QuickGO GO term page
+    quickGO <- "https://www.ebi.ac.uk/QuickGO/term/"
+    x <- x %>% mutate( GO.term.accession =  paste0("<a href=",quickGO,GO.term.accession,
+                                                   " target='_blank'>",GO.term.accession,"</a>") )
     
-    } , rownames =F )
+    } , rownames =F , escape = FALSE)
   
   output$downloadData <- downloadHandler({
    filename = function() {
