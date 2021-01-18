@@ -1,0 +1,12 @@
+name: miRNA-GO-analysis
+title: miRNA-GO-analysis
+username:
+account: fadeel
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2397385
+bundleId: 4104153
+url: https://fadeel.shinyapps.io/miRNA-GO-analysis/
+when: 1610800647.48356
+asMultiple: FALSE
+asStatic: FALSE

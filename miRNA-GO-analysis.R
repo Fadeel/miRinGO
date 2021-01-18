@@ -90,7 +90,7 @@ colnames(ts_edges)[6] <- "symbol"
 colnames(ts_edges)[2] <- "target.gene" 
 ts_edges$symbol  <- as.character(ts_edges$symbol)
 
-# collapse target genes into one row per TF
+# get number of background genes
 ts_genes <- data.frame(Gene = unique(gene_name_id$Gene.name))
 num_background_genes <- length(unique(ts_genes$Gene))
 
