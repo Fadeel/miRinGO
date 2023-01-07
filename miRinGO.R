@@ -108,7 +108,7 @@ ui <- fluidPage( theme = shinytheme("cosmo") ,
                    sidebarPanel(
                      selectInput("t",
                                  "tissue type:",
-                                 choices = c(levels(tissues$broad_tissue)),
+                                 choices = c(levels(as.factor(tissues$broad_tissue))),
                                  selected = "" 
                                  ),
                      
@@ -292,16 +292,16 @@ server <- function(input, output) {
   output$barplot <- renderPlot(
 
       
-    ggplot(top_k(), aes(y = -log10(adj.p.value) , x = reorder(GO.term.name , -adj.p.value) , 
-                  fill =num_intersection / num_genes ) ) +
+    ggplot(top_k(), aes(y = -log10(adj.p.value) , x = reorder(GO.term.name , -p.value) , 
+                  fill = num_intersection / num_genes) ) +
       theme_bw() +
       theme(axis.text = element_text(size = 15) , 
             axis.title = element_text(size = 20), 
             axis.title.y = element_blank() ) + 
       geom_bar(stat = "identity" ) +
-      geom_hline(yintercept = -log10(0.05) ,linetype = 'dashed' , size = 1)+
-      scale_fill_gradient(low="red", high="blue") +
-      coord_flip() 
+      #geom_hline(yintercept = -log10(0.05) ,linetype = 'dashed' , size = 1)+
+      scale_fill_gradient(low="blue", high="red") +
+      coord_flip() +  labs(fill = "Gene Ratio")
     
   )  
   
