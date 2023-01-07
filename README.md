@@ -23,4 +23,5 @@ can be accessed directly from this link https://fadeel.shinyapps.io/miRinGO
 |Number of GO terms/pathways for visualization |	Number of GO terms/pathways to be used for bar plot and word cloud |	integer value (default is 10) |
 
 ## User interface 
-This app has two panels, left one for input data and parameters selection and the right one for displaying the results as shown in below ![example run](https://raw.githubusercontent.com/Fadeel/miRinGO/master/user_interface.png)
+This app has two panels, left one for input data and parameters selection and the right one for displaying the results as shown in below (a) input parameters; (b) Table with miRNA GO enrichment analysis; (c) Bar plot and word cloud summarizing the top enriched GO terms.
+![example run](https://raw.githubusercontent.com/Fadeel/miRinGO/master/user_interface.png)
